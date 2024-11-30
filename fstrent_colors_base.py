@@ -387,48 +387,47 @@ class CLR:
 	#<=====>#
 
 	def demo1(self):
-		# Add demo implementation
-		pass
+		return "Demo 1"
 
 	#<=====>#
 
 	def demo2(self):
-		pass
+		return "Demo 2"
 
 	#<=====>#
 
 	def demo3(self):
-		pass
+		return "Demo 3"
 
 	#<=====>#
 
 	def demo4(self):
-		pass
+		return "Demo 4"
 
 	#<=====>#
 
 	def demo5(self):
-		pass
+		return "Demo 5"
 
 	#<=====>#
 
 	def demo6(self):
-		pass
+		return "Demo 6"
 
 	#<=====>#
 
 	def demo7(self):
-		pass
+		return "Demo 7"
 
 	#<=====>#
 
 	def demo8(self):
-		pass
+		return "Demo 8"
 
 	#<=====>#
 
 	def demo9(self):
-		pass
+		return "Demo 9"
 
 #<=====>#
 # Functions
