@@ -39,6 +39,8 @@ setup(
             "isort>=5.0",
             "flake8>=3.9",
             "bump2version>=1.0",
+            "build",
+            "twine",
         ],
     },
 ) 

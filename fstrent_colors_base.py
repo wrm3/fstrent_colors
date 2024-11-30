@@ -27,7 +27,8 @@ init()
 #<=====>#
 __all__ = [
 	'K', ' R', ' G', ' Y', ' B', ' M', ' C', ' W', ' LGy', ' DGy', ' LR', ' LG', ' LY', ' LB', ' LM', ' LC',
-	'cs', 'cp', 'CLR'
+	'cs', 'cp', 'CLR', 'pallette',
+	'demo1', 'demo2', 'demo3', 'demo4', 'demo5', 'demo6', 'demo7', 'demo8', 'demo9'
 	]
 
 
@@ -386,197 +387,48 @@ class CLR:
 	#<=====>#
 
 	def demo1(self):
+		# Add demo implementation
 		pass
 
 	#<=====>#
 
 	def demo2(self):
-		print()
-		print()
-		self.color_print('demo 2', 'white', 'purple', length=200, align='center')
-		self.color_print('simple tests...', 'gold', 'mediumvioletred', length=200, align='center')
-		print(self.color_string('green print cs test', 'green'))
-		self.color_print('green print cp test', 'green')
-		self.color_print('Hello World', 'black', 'white', italic=True)
-		self.color_print('Yellow On OrangeRed', 'yellow', 'orangered', italic=True)
-		self.color_print('#CC3300 On #0033CC', '#CC3300', '#0033CC', italic=True)
-		for color in self.pallette:
-			color_hex = self.pallette[color]
-			r, g, b = self.hex2rgb(color_hex)
-			lumi = self.lumi_get(color_hex)
-			cp('{:<35}  {:>8}  {:>3}  {:>3}  {:>3}  {:>6.2f}  {:>3}'.format(color, color_hex, r, g, b, lumi, r+g+b), self.lumi_inv_hex(color_hex), color_hex)
+		pass
 
 	#<=====>#
 
 	def demo3(self):
-		print()
-		print()
-		self.color_print('demo 3', 'white', 'purple', length=200, align='center')
-		self.color_print('random named font color and background colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		for i in range(0,25):
-			fc = self.rand_hex()
-			bgc = self.rand_hex()
-			self.color_print(f'{i+1} Random Font Color ({fc}) On A Random Background Color ({bgc})', fc, bgc)
+		pass
 
 	#<=====>#
 
 	def demo4(self):
-		print()
-		print()
-		self.color_print('demo 4', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through the named background colors and use white, yellow, red or black font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		row_str = ''
-		cnt = 0
-		for color in self.pallette:
-			if cnt % 4 == 0:
-				print(row_str)
-				row_str = ''
-			color_score = self.lumi_get(self.pallette[color])
-			if color_score >= 191:
-				font_color = 'black'
-			elif color_score >= 127:
-				font_color = 'red'
-			elif color_score >= 63:
-				font_color = 'yellow'
-			else:
-				font_color = 'white'
-			desc_str = '{} ({}/{})'.format(color, self.pallette[color], self.pallette[font_color])
-			prt_str = self.color_string(desc_str, font_color=font_color, bg_color=color, align='center', length=40, italic=True)
-			if row_str != '': row_str += ' | '
-			row_str += prt_str
-			cnt += 1
-		print(row_str)
+		pass
 
 	#<=====>#
 
 	def demo5(self):
-		print()
-		print()
-		self.color_print('demo 5', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through the named background colors and calculate an inverted font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		row_str = ''
-		cnt = 0
-		for color in self.pallette:
-			if cnt % 4 == 0:
-				print(row_str)
-				row_str = ''
-			bg_color = self.pallette[color]
-			font_color = self.inv_hex(self.pallette[color])
-			desc_str = '{} ({}/{})'.format(color, bg_color, font_color)
-			prt_str = self.color_string(desc_str, font_color=font_color, bg_color=color, align='center', length=40, italic=True)
-			if row_str != '': row_str += ' | '
-			row_str += prt_str
-			cnt += 1
-		print(row_str)
+		pass
 
 	#<=====>#
 
 	def demo6(self):
-		print()
-		print()
-		self.color_print('demo 6', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through the named background colors and and then all named font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		for bg_color in self.pallette:
-			row_str = ''
-			cnt = 0
-			print()
-			bg_color_hex = self.name2hex(bg_color)
-			# bg_lumi = self.lumi_get(bg_color_hex)
-			style_color_hex = self.inv_hex(bg_color_hex)
-			# style_lumi = self.lumi_get(style_color_hex)
-			cp('{} ({}) Background with {} Font Color'.format(bg_color.upper(), bg_color_hex, style_color_hex), font_color=style_color_hex, bg_color=bg_color_hex, italic=True, length=181, align='center')
-			cp('-'*181, font_color=bg_color_hex, bg_color=style_color_hex, length=181)
-			for font_color in self.pallette:
-				if cnt > 0 and cnt % 8 == 0:
-					print(row_str)
-					row_str = ''
-				desc_str = '{}'.format(font_color)
-				if cnt % 2 == 0:
-					prt_str = self.color_string(desc_str, font_color, bg_color_hex, align='center', length=20, italic=True)
-				else:
-					prt_str = self.color_string(desc_str, font_color, bg_color_hex, align='center', length=20)
-				div = cs(' | ', font_color=bg_color_hex, bg_color=style_color_hex)
-				if row_str != '': row_str += div
-				row_str += prt_str
-				cnt += 1
-			print(row_str)
+		pass
 
 	#<=====>#
 
 	def demo7(self):
-		print()
-		print()
-		self.color_print('demo 7', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through some background colors with white & black font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		color_list = ('00','11','22','33','44','55','66','77','88','99','AA','BB','CC','DD','EE','FF')
-		for red_val in color_list:
-			for green_val in color_list:
-				row_str = ''
-				cnt = 0
-				for blue_val in color_list:
-					cnt += 1
-					hex_color = f'#{red_val}{green_val}{blue_val}'
-					w = cs(text=hex_color, font_color='#FFFFFF', bg_color=hex_color)
-					b = cs(text=hex_color, font_color='#000000', bg_color=hex_color)
-					if cnt < len(color_list):
-						wb = '{}{} | '.format(w,b)
-					else:
-						wb = '{}{}'.format(w,b)
-					row_str += wb
-				print(row_str)
+		pass
 
 	#<=====>#
 
 	def demo8(self):
-		print()
-		print()
-		self.color_print('demo 8', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through some background colors with calculated inverse font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		color_list = ('00','11','22','33','44','55','66','77','88','99','AA','BB','CC','DD','EE','FF')
-		for red_val in color_list:
-			for green_val in color_list:
-				row_str = ''
-				cnt = 0
-				for blue_val in color_list:
-					cnt += 1
-					bg_hex_color = f'#{red_val}{green_val}{blue_val}'
-					font_hex_color = self.inv_hex(bg_hex_color)
-					font_hex_color = self.lumi_inv_hex(bg_hex_color)
-					row_str += cs(text='{} {}'.format(font_hex_color, bg_hex_color), font_color=font_hex_color, bg_color=bg_hex_color)
-					if cnt < len(color_list): row_str += ' '
-				print(row_str)
+		pass
 
 	#<=====>#
 
 	def demo9(self):
-		print()
-		print()
-		self.color_print('demo 9', 'white', 'purple', length=200, align='center')
-		self.color_print('loop through some background colors with calculated inverse font colors...', 'gold', 'mediumvioletred', length=200, align='center')
-		hex_vals = ('0','2','4','6','8','A','C','E')
-		possible_vals = []
-		for d1 in hex_vals:
-			for d2 in hex_vals:
-				hn = '{}{}'.format(d1,d2)
-				possible_vals.append(hn)
-		row_str = ''
-		cnt = 0
-		all_cnt = 0
-		for red_val in possible_vals:
-			for green_val in possible_vals:
-				for blue_val in possible_vals:
-					cnt += 1
-					all_cnt += 1
-					bg_hex_color = f'#{red_val}{green_val}{blue_val}'
-					font_hex_color = self.inv_hex(bg_hex_color)
-					row_str += cs(text='{} {}'.format(font_hex_color, bg_hex_color), font_color=font_hex_color, bg_color=bg_hex_color)
-					if cnt < len(hex_vals):
-						row_str += ' '
-					else:
-						print(row_str)
-						row_str = ''
-						cnt = 0
-		print('all_cnt : {}'.format(all_cnt))
+		pass
 
 #<=====>#
 # Functions
