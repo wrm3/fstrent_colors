@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="fstrent_colors",
-    version="0.1.2",
+    version="0.1.3",
     author="Warren R Martel III",
     author_email="wrmartel3@gmail.com",
     description="enhanced colors options for terminal output",

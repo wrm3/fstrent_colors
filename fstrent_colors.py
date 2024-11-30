@@ -1,6 +1,6 @@
 """FSTrent Colors - Enhanced colors options for terminal output."""
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 # Re-export everything from base
 from fstrent_colors_base import (
