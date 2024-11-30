@@ -9,7 +9,19 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/wrm3/fstrent_colors",
-    packages=find_packages(),
+    py_modules=[
+        "fstrent_colors",
+        "fstrent_colors_base",
+        "fstrent_colors_on_black",
+        "fstrent_colors_on_white",
+        "fstrent_colors_on_gray",
+        "fstrent_colors_on_blue",
+        "fstrent_colors_on_cyan",
+        "fstrent_colors_on_green",
+        "fstrent_colors_on_magenta",
+        "fstrent_colors_on_red",
+        "fstrent_colors_on_yellow"
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
