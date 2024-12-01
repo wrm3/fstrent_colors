@@ -3,7 +3,7 @@
 import pytest
 from io import StringIO
 import sys
-from fstrent_colors import (
+from .fstrent_colors import (
     # Utility functions
     cs, cp, pallette, CLR,
     
