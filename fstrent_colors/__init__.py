@@ -58,4 +58,4 @@ from .fstrent_colors import (
     KoLY, RoLY, GoLY, YoLY, BoLY, MoLY, CoLY, WoLY, LGyoLY, DGyoLY, LRoLY, LGoLY, LYoLY, LBoLY, LMoLY, LCoLY
 )
 
-__version__ = "__version__ = "1.0.7""
+__version__ = "1.0.7"
