@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
 setup(
@@ -6,21 +7,11 @@ setup(
     author="Warren R Martel III",
     author_email="wrmartel3@gmail.com",
     description="enhanced colors options for terminal output",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/wrm3/fstrent_colors",
     py_modules=[
-        "fstrent_colors",
-        "fstrent_colors_base",
-        "fstrent_colors_on_black",
-        "fstrent_colors_on_white",
-        "fstrent_colors_on_gray",
-        "fstrent_colors_on_blue",
-        "fstrent_colors_on_cyan",
-        "fstrent_colors_on_green",
-        "fstrent_colors_on_magenta",
-        "fstrent_colors_on_red",
-        "fstrent_colors_on_yellow"
+        "fstrent_colors"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

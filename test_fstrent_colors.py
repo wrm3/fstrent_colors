@@ -7,11 +7,11 @@ from fstrent_colors import (
     # Utility functions
     cs, cp, pallette, CLR,
     
-    # Basic colors
-    K, R, G, Y, B, M, C, W, LGy, DGy, LR, LG, LY, LB, LM, LC,
-    
     # Demo functions
     demo1, demo2, demo3, demo4, demo5, demo6, demo7, demo8, demo9,
+    
+    # Basic colors
+    K, R, G, Y, B, M, C, W, LGy, DGy, LR, LG, LY, LB, LM, LC,
     
     # Colors on black
     KoK, RoK, GoK, YoK, BoK, MoK, CoK, WoK, LGyoK, DGyoK, LRoK, LGoK, LYoK, LBoK, LMoK, LCoK,
@@ -59,12 +59,7 @@ from fstrent_colors import (
     KoY, RoY, GoY, YoY, BoY, MoY, CoY, WoY, LGyoY, DGyoY, LRoY, LGoY, LYoY, LBoY, LMoY, LCoY,
     
     # Colors on light yellow
-    KoLY, RoLY, GoLY, YoLY, BoLY, MoLY, CoLY, WoLY, LGyoLY, DGyoLY, LRoLY, LGoLY, LYoLY, LBoLY, LMoLY, LCoLY,
-)
-
-from fstrent_colors_base import (
-    demo1, demo2, demo3, demo4, demo5, 
-    demo6, demo7, demo8, demo9
+    KoLY, RoLY, GoLY, YoLY, BoLY, MoLY, CoLY, WoLY, LGyoLY, DGyoLY, LRoLY, LGoLY, LYoLY, LBoLY, LMoLY, LCoLY
 )
 
 @pytest.fixture
