@@ -13,7 +13,7 @@ import sys
 import time
 import random
 
-from colorama import init, Fore, Back, Style
+from colorama import init
 # Initialize colorama
 init()
 
@@ -22,9 +22,8 @@ init()
 # Define __all__ to control what gets imported with "from fstrent_colors import *"
 #<=====>#
 __all__ = [
-    'cs', 'cp', 'pallette', 'CLR',
+    'cs', 'cp' 'CLR',
     'K', 'R', 'G', 'Y', 'B', 'M', 'C', 'W', 'LGy', 'DGy', 'LR', 'LG', 'LY', 'LB', 'LM', 'LC',
-    'demo1', 'demo2', 'demo3', 'demo4', 'demo5', 'demo6', 'demo7', 'demo8', 'demo9',
     'KoK', 'RoK', 'GoK', 'YoK', 'BoK', 'MoK', 'CoK', 'WoK',
     'LGyoK', 'DGyoK', 'LRoK', 'LGoK', 'LYoK', 'LBoK', 'LMoK', 'LCoK',
     'KoW', 'RoW', 'GoW', 'YoW', 'BoW', 'MoW', 'CoW', 'WoW',

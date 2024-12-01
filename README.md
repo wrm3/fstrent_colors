@@ -100,7 +100,7 @@ from fstrent_colors import (
 ## Color Utility Functions
 
 ```python
-from fstrent_colors import cs, cp, pallette, CLR
+from fstrent_colors import cs, cp, CLR
 
 # Color string  and returnfunction
 text = cs("Colored text", R)
