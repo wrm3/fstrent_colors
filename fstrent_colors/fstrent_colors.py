@@ -22,7 +22,7 @@ init()
 # Define __all__ to control what gets imported with "from fstrent_colors import *"
 #<=====>#
 __all__ = [
-    'cs', 'cp' 'CLR',
+    'cs', 'cp', 'CLR',
     'K', 'R', 'G', 'Y', 'B', 'M', 'C', 'W', 'LGy', 'DGy', 'LR', 'LG', 'LY', 'LB', 'LM', 'LC',
     'KoK', 'RoK', 'GoK', 'YoK', 'BoK', 'MoK', 'CoK', 'WoK',
     'LGyoK', 'DGyoK', 'LRoK', 'LGoK', 'LYoK', 'LBoK', 'LMoK', 'LCoK',
