@@ -1,7 +1,7 @@
 """FSTrent Colors - Enhanced colors options for terminal output."""
 from .fstrent_colors import (
     # Utility functions
-    cs, cp, pallette, CLR,
+    cs, cp, CLR,
     
     # Demo functions
     demo1, demo2, demo3, demo4, demo5, demo6, demo7, demo8, demo9,
