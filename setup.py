@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="fstrent_colors",
-    version="1.0.7",
+    version="version="1.0.7"",
     packages=find_packages(),
     install_requires=[
         "colorama",
