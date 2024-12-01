@@ -446,7 +446,7 @@ class CLR:
 		colors = ['red', 'yellow', 'green', 'cyan', 'blue', 'magenta']
 		text = "Rainbow Colors"
 		for i, char in enumerate(text):
-			cp(char, colors[i % len(colors)], end='')
+			cp(char, colors[i % len(colors)])
 		print()
 		return "Rainbow Effect Demo"
 
