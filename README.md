@@ -6,6 +6,8 @@
 
 Enhanced terminal color library providing extensive color combinations and utilities for Python applications.
 
+
+
 ## Features
 
 - 🎨 16 Base colors (including light variants)
@@ -14,6 +16,12 @@ Enhanced terminal color library providing extensive color combinations and utili
 - 🛠️ Utility functions for string coloring
 - 📝 Simple API for color manipulation
 - 🔧 Cross-platform support via colorama
+
+## Demo
+
+Check out the demo video to see FSTrent Colors in action:
+
+[![FSTrent Colors Demo](https://img.youtube.com/vi/I_0jq4ZSAE8/0.jpg)](https://youtu.be/I_0jq4ZSAE8)
 
 ## Installation
 
